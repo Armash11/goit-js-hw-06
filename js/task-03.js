@@ -14,11 +14,13 @@ const images = [
 ];
 
 const ul = document.querySelector(".gallery");
-const marcup = images.map(
-  ({ url, alt }) => `<li>
+const marcup = images
+  .map(
+    ({ url, alt }) => `<li>
 <img src='${url}' alt='${alt}' class= 'img'
 </li>`
-);
+  )
+  .join("");
 ul.insertAdjacentHTML("beforeend", marcup);
 ul.classList.add("grid");
 console.dir(ul);
