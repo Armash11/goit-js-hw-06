@@ -23,4 +23,3 @@ const marcup = images
   .join("");
 ul.insertAdjacentHTML("beforeend", marcup);
 ul.classList.add("grid");
-console.dir(ul);
